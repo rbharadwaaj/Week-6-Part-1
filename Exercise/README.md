@@ -16,7 +16,7 @@ refer to  <br>
 </ol>
 <br>
 
-Use transition and styling to make the chart look nicer.
+Use transition and styling to make the chart look nicer. See the details in myCourses.
 
 
 #### SVG viewBox(0 0 1000 800)
