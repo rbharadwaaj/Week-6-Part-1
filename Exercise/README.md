@@ -7,7 +7,7 @@
 <p>
 The very basic preview of the visualization should look like the figure below.</p>
 <p>
-Make sure to style the visualization, and add the legends as well.</p>
+Make sure to style the visualization, and add the legends as well.</p><p>Refer to myCourses for the details of the requirements </p>
 
 
 <img width="50%" src="./img/preview.png" />
