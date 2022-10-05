@@ -10,4 +10,4 @@ The very basic preview of the visualization should look like the figure below.</
 Make sure to style the visualization, and add the legends as well.</p>
 
 
-<img width="50vw" src="./img/preview.png" />
+<img width="50%" src="./img/preview.png" />
