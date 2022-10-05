@@ -116,7 +116,7 @@
         attr("class",'axis')
             .attr("transform",
                 `translate(0, ${height-margins.bottom})`)
-            //.call(xAxis.tickFormat(d3.timeFormat("%B")))
+            //.call(xAxis.tickFormat(lib.timeFormat("%B")))
             .call(xAxis.tickFormat(d3.timeFormat("%b")))
             .selectAll("text");
             //.attr("transform","rotate(-50)")

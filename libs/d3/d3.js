@@ -3801,7 +3801,7 @@ function create$1(node, id, self) {
 
       // While this element already has a starting transition during this frame,
       // defer starting an interrupting transition until that transition has a
-      // chance to tick (and possibly end); see d3/d3-transition#54!
+      // chance to tick (and possibly end); see lib/lib-transition#54!
       if (o.state === STARTED) return timeout$1(start);
 
       // Interrupt the active transition, if any.
@@ -3821,9 +3821,9 @@ function create$1(node, id, self) {
       }
     }
 
-    // Defer the first tick to end of the current frame; see d3/d3#1576.
+    // Defer the first tick to end of the current frame; see lib/lib#1576.
     // Note the transition may be canceled after start and before the first tick!
-    // Note this must be scheduled before the start event; see d3/d3-transition#16!
+    // Note this must be scheduled before the start event; see lib/lib-transition#16!
     // Assuming this is successful, subsequent callbacks go straight to tick.
     timeout$1(function() {
       if (self.state === STARTED) {
@@ -4965,7 +4965,7 @@ function defaultTouchable$1() {
   return navigator.maxTouchPoints || ("ontouchstart" in this);
 }
 
-// Like d3.local, but with the name “__brush” rather than auto-generated.
+// Like lib.local, but with the name “__brush” rather than auto-generated.
 function local$1(node) {
   while (!node.__brush) if (!(node = node.parentNode)) return;
   return node.__brush;
@@ -10411,7 +10411,7 @@ function clipLine(a, b, x0, y0, x1, y1) {
 
 var clipMax = 1e9, clipMin = -clipMax;
 
-// TODO Use d3-polygon’s polygonContains here for the ring check?
+// TODO Use lib-polygon’s polygonContains here for the ring check?
 // TODO Eliminate duplicate buffering in clipBuffer and polygon.push?
 
 function clipRectangle(x0, y0, x1, y1) {
