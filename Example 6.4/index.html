@@ -140,7 +140,7 @@ h1{
             .radius(d=>radiusScale(d.t_avg)).curve(d3.curveCardinalClosed)
 
        const LineGen_min = d3.lineRadial()
-          .angle(d=>angleScale(d.date))
+            .angle(d=>angleScale(d.date))
            .radius(d=>radiusScale(d.t_min)).curve(d3.curveCardinalClosed)
 
        const LineGen_max = d3.lineRadial()
